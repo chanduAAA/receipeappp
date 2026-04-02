@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Details</title>
+    <link rel="stylesheet" href="recipe-detail.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="back-nav">
+            <a href="index.html" class="back-btn">← Back to Recipes</a>
+        </nav>
+
+        <div id="loadingSpinner" class="spinner">
+            <div class="loader"></div>
+            <p>Loading recipe details...</p>
+        </div>
+
+        <div id="recipeDetail" style="display: none;">
+            <div class="recipe-header">
+                <img id="recipeImage" src="" alt="Recipe Image" class="recipe-hero-image">
+                <div class="recipe-header-content">
+                    <h1 id="recipeTitle"></h1>
+                    <div class="recipe-stats">
+                        <div class="stat-item">
+                            <span class="stat-icon">⏱️</span>
+                            <div>
+                                <div class="stat-label">Ready in</div>
+                                <div class="stat-value" id="readyTime"></div>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-icon">🍽️</span>
+                            <div>
+                                <div class="stat-label">Servings</div>
+                                <div class="stat-value" id="servings"></div>
+                            </div>
+                        </div>
+                        <div class="stat-item" id="healthScoreContainer">
+                            <span class="stat-icon">❤️</span>
+                            <div>
+                                <div class="stat-label">Health Score</div>
+                                <div class="stat-value" id="healthScore"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-content">
+                <div class="ingredients-section">
+                    <h2>📋 Ingredients</h2>
+                    <ul id="ingredientsList"></ul>
+                </div>
+
+                <div class="instructions-section">
+                    <h2>👨‍🍳 Cooking Instructions</h2>
+                    <div id="instructionsList"></div>
+                </div>
+
+                <div id="videoSection" class="video-section" style="display: none;">
+                    <h2>📺 Video Tutorial</h2>
+                    <div id="videoContainer"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="errorMessage" class="error-message" style="display: none;">
+            <p>Unable to load recipe details. Please try again.</p>
+            <a href="index.html" class="back-btn">← Back to Recipes</a>
+        </div>
+    </div>
+
+    <script src="recipe-detail.js"></script>
+</body>
+</html>

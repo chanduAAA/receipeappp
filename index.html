@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PantryPal • Recipe Finder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>🍳 PantryPal</h1>
+        <p>What’s in your kitchen? Let’s cook something awesome!</p>
+      </header>
+
+      <main>
+        <section class="ingredient-section">
+          <h2>Select ingredients you have right now</h2>
+
+          <div class="ingredient-categories">
+            <!-- Vegetables -->
+            <div class="category">
+              <h3>🥬 Vegetables</h3>
+              <div class="ingredient-grid">
+                <label
+                  ><input type="checkbox" name="ingredient" value="tomato" />
+                  Tomato</label
+                >
+                <label
+                  ><input type="checkbox" name="ingredient" value="onion" />
+                  Onion</label
+                >
+                <label
+                  ><input type="checkbox" name="ingredient" value="garlic" />
+                  Garlic</label
+                >
+                <label
+                  ><input type="checkbox" name="ingredient" value="potato" />
+                  Potato</label
+                >
+                <label
+                  ><input type="checkbox" name="ingredient" value="carrot" />
+                  Carrot</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="ingredient"
+                    value="bell pepper"
+                  />
+                  Bell Pepper</label
+                >
+                <label
+                  ><input type="checkbox" name="ingredient" value="spinach" />
+                  Spinach</label
+                >
+                <label
+                  ><input type="checkbox" name="ingredient" value="broccoli" />
+                  Broccoli</label
+                >
+                <label
+                  ><input type="checkbox" name="ingredient" value="cucumber" />
+                  Cucumber</label
+                >
+                <label
+                  ><input type="checkbox" name="ingredient" value="cabbage" />
+                  Cabbage</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="ingredient"
+                    value="cauliflower"
+                  />
+                  Cauliflower</label
+                >
+                <label
+                  ><input type="checkbox" name="ingredient" value="peas" />
+                  Peas</label
+                >
+                <label
+                  ><input type="checkbox" name="ingredient" value="beans" />
+                  Green Beans</label
+                >
+              </div>
+            </div>
+
+            <!-- Proteins -->
+            <div class="category">
+              <h3>🍗 Proteins</h3>
+              <div class="ingredient-grid">
+                <label
+                  ><input type="checkbox" name="ingredient" value="chicken" />
+                  Chicken</label
+                >
+                <label
+                  ><input type="checkbox" name="ingredient" value="beef" />
+                  Beef</label
+                >
+                <label
+                  ><input type="checkbox" name="ingredient" value="eggs" />
+                  Eggs</label
+                >
+                <label
+                  ><input type="checkbox" name="ingredient" value="tofu" />
+                  Tofu</label
+                >
+                <label
+                  ><input type="checkbox" name="ingredient" value="shrimp" />
+                  Shrimp</label
+                >
+                <label
+                  ><input type="checkbox" name="ingredient" value="paneer" />
+                  Paneer</label
+                >
+                <label
+                  ><input type="checkbox" name="ingredient" value="chickpeas" />
+                  Chickpeas</label
+                >
+                <label
+                  ><input type="checkbox" name="ingredient" value="lentils" />
+                  Lentils (Dal)</label
+                >
+              </div>
+            </div>
+
+            <!-- Dairy -->
+            <div class="category">
+              <h3>🧀 Dairy</h3>
+              <div class="ingredient-grid">
+                <label
+                  ><input type="checkbox" name="ingredient" value="milk" />
+                  Milk</label
+                >
+                <label
+                  ><input type="checkbox" name="ingredient" value="cheese" />
+                  Cheese</label
+                >
+                <label
+                  ><input type="checkbox" name="ingredient" value="butter" />
+                  Butter</label
+                >
+                <label
+                  ><input type="checkbox" name="ingredient" value="cream" />
+                  Cream</label
+                >
+                <label
+                  ><input type="checkbox" name="ingredient" value="yogurt" />
+                  Yogurt</label
+                >
+                <label
+                  ><input type="checkbox" name="ingredient" value="ghee" />
+                  Ghee</label
+                >
+              </div>
+            </div>
+
+            <!-- Grains & Pasta -->
+            <div class="category">
+              <h3>🍚 Grains & Pasta</h3>
+              <div class="ingredient-grid">
+                <label
+                  ><input type="checkbox" name="ingredient" value="rice" />
+                  Rice</label
+                >
+                <label
+                  ><input type="checkbox" name="ingredient" value="pasta" />
+                  Pasta</label
+                >
+                <label
+                  ><input type="checkbox" name="ingredient" value="noodles" />
+                  Noodles</label
+                >
+                <label
+                  ><input type="checkbox" name="ingredient" value="bread" />
+                  Bread</label
+                >
+              </div>
+            </div>
+
+            <!-- Pantry Staples -->
+            <div class="category">
+              <h3>🥫 Pantry Staples</h3>
+              <div class="ingredient-grid">
+                <label
+                  ><input type="checkbox" name="ingredient" value="olive oil" />
+                  Olive Oil</label
+                >
+                <label
+                  ><input type="checkbox" name="ingredient" value="soy sauce" />
+                  Soy Sauce</label
+                >
+                <label
+                  ><input type="checkbox" name="ingredient" value="salt" />
+                  Salt</label
+                >
+                <label
+                  ><input type="checkbox" name="ingredient" value="pepper" />
+                  Pepper</label
+                >
+                <label
+                  ><input type="checkbox" name="ingredient" value="cumin" />
+                  Cumin</label
+                >
+                <label
+                  ><input type="checkbox" name="ingredient" value="turmeric" />
+                  Turmeric</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="ingredient"
+                    value="chili powder"
+                  />
+                  Red Chili Powder</label
+                >
+                <label
+                  ><input type="checkbox" name="ingredient" value="ginger" />
+                  Ginger</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="ingredient"
+                    value="garam masala"
+                  />
+                  Garam Masala</label
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="action-buttons">
+            <button id="findRecipesBtn" class="btn-primary">
+              🔍 Show Recipes
+            </button>
+            <button id="clearBtn" class="btn-secondary">Clear All</button>
+          </div>
+
+          <div id="selectedIngredients"></div>
+        </section>
+
+        <section
+          id="recipesSection"
+          class="recipes-section"
+          style="display: none"
+        >
+          <h2>Recipes you can make right now</h2>
+          <div id="loadingSpinner" class="spinner" style="display: none">
+            <div class="loader"></div>
+            <p>Finding perfect matches...</p>
+          </div>
+          <div id="recipeResults" class="recipe-grid"></div>
+          <div id="noResults" style="display: none" class="no-results">
+            <p>No recipes found. Try different ingredients!</p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
